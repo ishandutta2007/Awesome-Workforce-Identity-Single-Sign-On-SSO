@@ -1,0 +1,167 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B0F19"/>
+      <stop offset="50%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+
+    <!-- Accent Gradients -->
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="50%" stop-color="#818CF8"/>
+      <stop offset="100%" stop-color="#C084FC"/>
+    </linearGradient>
+
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#C084FC" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0.9"/>
+    </linearGradient>
+
+    <!-- Glow Filters -->
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Animations -->
+    <style>
+      @keyframes pulseGlow {
+        0%, 100% { opacity: 0.3; transform: scale(1); }
+        50% { opacity: 0.7; transform: scale(1.03); }
+      }
+      @keyframes floatNode {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-8px); }
+      }
+      @keyframes dashMove {
+        0% { stroke-dashoffset: 100; }
+        100% { stroke-dashoffset: 0; }
+      }
+      @keyframes rotateRing {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      
+      .animated-bg-circle { animation: pulseGlow 6s ease-in-out infinite; transform-origin: center; }
+      .animated-node-1 { animation: floatNode 4s ease-in-out infinite; }
+      .animated-node-2 { animation: floatNode 5s ease-in-out infinite 1s; }
+      .animated-node-3 { animation: floatNode 4.5s ease-in-out infinite 0.5s; }
+      .animated-dash { stroke-dasharray: 8 8; animation: dashMove 12s linear infinite; }
+      .animated-ring { animation: rotateRing 20s linear infinite; transform-origin: 980px 200px; }
+    </style>
+  </defs>
+
+  <!-- Base Background -->
+  <rect width="1200" height="400" rx="16" fill="url(#bgGrad)"/>
+
+  <!-- Background Decorative Grid Rays & Waves (Dynamic Layer) -->
+  <g id="background-decorations" opacity="0.6">
+    <!-- Grid Lines -->
+    <path d="M 0 100 L 1200 100 M 0 200 L 1200 200 M 0 300 L 1200 300" stroke="#334155" stroke-width="1" opacity="0.25"/>
+    <path d="M 200 0 L 200 400 M 400 0 L 400 400 M 600 0 L 600 400 M 800 0 L 800 400 M 1000 0 L 1000 400" stroke="#334155" stroke-width="1" opacity="0.25"/>
+
+    <!-- Glowing Background Orbs -->
+    <circle cx="150" cy="80" r="180" fill="url(#glowGrad)" class="animated-bg-circle"/>
+    <circle cx="980" cy="200" r="220" fill="url(#glowGrad)" class="animated-bg-circle" style="animation-delay: -3s;"/>
+
+    <!-- Dynamic Flow Connecting Lines (Behind Text) -->
+    <path d="M 100 320 Q 300 380 500 320 T 900 320" fill="none" stroke="url(#primaryGrad)" stroke-width="2" opacity="0.4" class="animated-dash"/>
+    <path d="M 50 80 Q 400 20 800 60 T 1150 90" fill="none" stroke="#818CF8" stroke-width="1.5" opacity="0.3" class="animated-dash"/>
+
+    <!-- Security Tech Nodes Graphic (Right Side - Non overlapping) -->
+    <g class="animated-ring" opacity="0.3">
+      <circle cx="980" cy="200" r="120" fill="none" stroke="url(#primaryGrad)" stroke-width="1.5" stroke-dasharray="6 12"/>
+      <circle cx="980" cy="200" r="90" fill="none" stroke="#38BDF8" stroke-width="1" stroke-dasharray="4 8"/>
+    </g>
+
+    <!-- Shield Icon on Right -->
+    <g class="animated-node-1" transform="translate(930, 140)">
+      <path d="M 50 10 L 90 30 V 65 C 90 90 50 110 50 110 C 50 110 10 90 10 65 V 30 Z" fill="url(#shieldGrad)" stroke="url(#primaryGrad)" stroke-width="3" filter="url(#softGlow)"/>
+      <!-- Lock Keyhole inside Shield -->
+      <circle cx="50" cy="50" r="10" fill="#38BDF8"/>
+      <path d="M 46 56 L 54 56 L 56 75 L 44 75 Z" fill="#38BDF8"/>
+    </g>
+
+    <!-- Dynamic Floating Pills/Badges (Right & Floating Elements) -->
+    <g class="animated-node-2" transform="translate(810, 80)">
+      <rect width="110" height="32" rx="16" fill="#1E293B" stroke="#38BDF8" stroke-width="1.5" opacity="0.8"/>
+      <text x="55" y="21" fill="#38BDF8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" text-anchor="middle">🔒 OAuth 2.0</text>
+    </g>
+
+    <g class="animated-node-3" transform="translate(1030, 90)">
+      <rect width="95" height="32" rx="16" fill="#1E293B" stroke="#818CF8" stroke-width="1.5" opacity="0.8"/>
+      <text x="47" y="21" fill="#818CF8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" text-anchor="middle">🔑 OIDC</text>
+    </g>
+
+    <g class="animated-node-1" transform="translate(840, 290)">
+      <rect width="105" height="32" rx="16" fill="#1E293B" stroke="#C084FC" stroke-width="1.5" opacity="0.8"/>
+      <text x="52" y="21" fill="#C084FC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" text-anchor="middle">🛡️ SAML 2.0</text>
+    </g>
+
+    <g class="animated-node-2" transform="translate(1010, 280)">
+      <rect width="110" height="32" rx="16" fill="#1E293B" stroke="#34D399" stroke-width="1.5" opacity="0.8"/>
+      <text x="55" y="21" fill="#34D399" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" text-anchor="middle">⚡ Zero Trust</text>
+    </g>
+  </g>
+
+  <!-- FOREGROUND LAYER: Title, Subtitle, Highlights (Strictly on Top & Unobscured) -->
+  <g id="foreground-text">
+    <!-- Top Pill Category Badge -->
+    <g transform="translate(70, 75)">
+      <rect width="280" height="34" rx="17" fill="#1E293B" stroke="url(#primaryGrad)" stroke-width="1.5"/>
+      <text x="140" y="22" fill="#F8FAFC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" letter-spacing="0.5" text-anchor="middle">
+        🛡️ WORKFORCE IDENTITY &amp; SSO ECOSYSTEM
+      </text>
+    </g>
+
+    <!-- Main Title (Gradient Fill + Drop Shadow) -->
+    <text x="70" y="165" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="40" font-weight="800" fill="url(#primaryGrad)" filter="url(#softGlow)" letter-spacing="-0.5">
+      Awesome Workforce Identity
+    </text>
+    <text x="70" y="215" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="38" font-weight="800" fill="#FFFFFF" letter-spacing="-0.5">
+      &amp; Single Sign-On (SSO) 🔐
+    </text>
+
+    <!-- Subtitle -->
+    <text x="70" y="265" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="400" fill="#94A3B8">
+      Curated List of Commercial Enterprise IdPs, Self-Hosted IAM &amp; Open-Source Projects
+    </text>
+
+    <!-- Feature Highlights Tags -->
+    <g transform="translate(70, 305)">
+      <!-- Tag 1 -->
+      <rect x="0" y="0" width="130" height="28" rx="6" fill="#1E293B" opacity="0.9"/>
+      <text x="65" y="18" fill="#CBD5E1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" text-anchor="middle">🏢 Enterprise IdP</text>
+
+      <!-- Tag 2 -->
+      <rect x="142" y="0" width="130" height="28" rx="6" fill="#1E293B" opacity="0.9"/>
+      <text x="207" y="18" fill="#CBD5E1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" text-anchor="middle">💻 Self-Hosted</text>
+
+      <!-- Tag 3 -->
+      <rect x="284" y="0" width="140" height="28" rx="6" fill="#1E293B" opacity="0.9"/>
+      <text x="354" y="18" fill="#CBD5E1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" text-anchor="middle">🌐 OIDC / SAML 2.0</text>
+
+      <!-- Tag 4 -->
+      <rect x="436" y="0" width="120" height="28" rx="6" fill="#1E293B" opacity="0.9"/>
+      <text x="496" y="18" fill="#CBD5E1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" text-anchor="middle">🚀 Open-Source</text>
+    </g>
+  </g>
+</svg>
