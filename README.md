@@ -58,51 +58,51 @@ Below is the curated table of top SaaS/Hosted Workforce Identity & SSO platforms
 
 Workforce identity is one of the strongest open-source software domains. The repositories below provide production-grade identity providers (IdPs), authentication proxies, and governance solutions.
 
-Repos are sorted descending by GitHub Star Count:
+Repos are sorted descending by GitHub Stars_Count:
 
-1. **[Keycloak](https://github.com/keycloak/keycloak)** [![GitHub stars](https://img.shields.io/github/stars/keycloak/keycloak?style=social&color=white)](https://github.com/keycloak/keycloak/stargazers)  
+1. **[Keycloak](https://github.com/keycloak/keycloak)** [![GitHub_Stars](https://img.shields.io/github/stars/keycloak/keycloak?style=social&color=white)](https://github.com/keycloak/keycloak/stargazers)  
    👑 **The de facto open-source identity provider** (Apache-2.0). Supports OAuth 2.0, OpenID Connect (OIDC), SAML 2.0, User Federation (LDAP/AD), Identity Brokering, and social login. Includes a comprehensive admin console and fine-grained authorization. **Best for enterprise-grade, battle-tested self-hosted IAM.**
 
-2. **[Authelia](https://github.com/authelia/authelia)** [![GitHub stars](https://img.shields.io/github/stars/authelia/authelia?style=social&color=white)](https://github.com/authelia/authelia/stargazers)  
+2. **[Authelia](https://github.com/authelia/authelia)** [![GitHub_Stars](https://img.shields.io/github/stars/authelia/authelia?style=social&color=white)](https://github.com/authelia/authelia/stargazers)  
    ⚡ **Lightweight open-source authentication & authorization server** (Apache-2.0). Provides 2FA/MFA, SSO, and forward-auth for reverse proxies like Nginx, Traefik, Caddy, and HAProxy. **Best for securing self-hosted applications and homelabs.**
 
-3. **[Authentik](https://github.com/goauthentik/authentik)** [![GitHub stars](https://img.shields.io/github/stars/goauthentik/authentik?style=social&color=white)](https://github.com/goauthentik/authentik/stargazers)  
+3. **[Authentik](https://github.com/goauthentik/authentik)** [![GitHub_Stars](https://img.shields.io/github/stars/goauthentik/authentik?style=social&color=white)](https://github.com/goauthentik/authentik/stargazers)  
    🎨 **Flexible flow-based open-source IdP** (GPL-3.0). Supports OAuth2/OIDC, SAML, LDAP, and proxy authentication. Features a visual flow editor for customizing login, registration, and MFA pipelines. **Best for teams requiring flexible authentication workflows.**
 
-4. **[Ory Hydra](https://github.com/ory/hydra)** [![GitHub stars](https://img.shields.io/github/stars/ory/hydra?style=social&color=white)](https://github.com/ory/hydra/stargazers)  
+4. **[Ory Hydra](https://github.com/ory/hydra)** [![GitHub_Stars](https://img.shields.io/github/stars/ory/hydra?style=social&color=white)](https://github.com/ory/hydra/stargazers)  
    🛡️ **Hardened OpenID Certified™ OAuth 2.0 & OpenID Connect Server** (Apache-2.0). Headless and API-first, designed to integrate seamlessly into existing login UIs. **Best for cloud-native OAuth2 / OIDC token issuer architecture.**
 
-5. **[SuperTokens](https://github.com/supertokens/supertokens-core)** [![GitHub stars](https://img.shields.io/github/stars/supertokens/supertokens-core?style=social&color=white)](https://github.com/supertokens/supertokens-core/stargazers)  
+5. **[SuperTokens](https://github.com/supertokens/supertokens-core)** [![GitHub_Stars](https://img.shields.io/github/stars/supertokens/supertokens-core?style=social&color=white)](https://github.com/supertokens/supertokens-core/stargazers)  
    🔑 **Developer-friendly open-source authentication architecture** (Apache-2.0). Offers end-to-end session management, SSO, social login, and passwordless authentication with customizable SDKs. **Best for web and mobile app authentication.**
 
-6. **[Logto](https://github.com/logto-io/logto)** [![GitHub stars](https://img.shields.io/github/stars/logto-io/logto?style=social&color=white)](https://github.com/logto-io/logto/stargazers)  
+6. **[Logto](https://github.com/logto-io/logto)** [![GitHub_Stars](https://img.shields.io/github/stars/logto-io/logto?style=social&color=white)](https://github.com/logto-io/logto/stargazers)  
    🚀 **Modern open-source Auth0 alternative** (MPL-2.0). Provides OIDC-based identity management, multi-tenancy, machine-to-machine (M2M) auth, and ready-to-use SDKs. **Best for B2B and consumer SaaS applications.**
 
-7. **[Ory Kratos](https://github.com/ory/kratos)** [![GitHub stars](https://img.shields.io/github/stars/ory/kratos?style=social&color=white)](https://github.com/ory/kratos/stargazers)  
+7. **[Ory Kratos](https://github.com/ory/kratos)** [![GitHub_Stars](https://img.shields.io/github/stars/ory/kratos?style=social&color=white)](https://github.com/ory/kratos/stargazers)  
    ⚙️ **API-first cloud-native identity management server** (Apache-2.0). Handles user management, registration, account recovery, MFA, and passkeys/FIDO2. **Best for building headless custom identity solutions.**
 
-8. **[Dex](https://github.com/dexidp/dex)** [![GitHub stars](https://img.shields.io/github/stars/dexidp/dex?style=social&color=white)](https://github.com/dexidp/dex/stargazers)  
+8. **[Dex](https://github.com/dexidp/dex)** [![GitHub_Stars](https://img.shields.io/github/stars/dexidp/dex?style=social&color=white)](https://github.com/dexidp/dex/stargazers)  
    ☸️ **Open-source OIDC identity provider and federation engine** (Apache-2.0). Acts as a portal to federate authentication against SAML, LDAP, OAuth2, and GitHub for Kubernetes clusters and infrastructure. **Best for Kubernetes authentication.**
 
-9. **[Casdoor](https://github.com/casdoor/casdoor)** [![GitHub stars](https://img.shields.io/github/stars/casdoor/casdoor?style=social&color=white)](https://github.com/casdoor/casdoor/stargazers)  
+9. **[Casdoor](https://github.com/casdoor/casdoor)** [![GitHub_Stars](https://img.shields.io/github/stars/casdoor/casdoor?style=social&color=white)](https://github.com/casdoor/casdoor/stargazers)  
    🖥️ **UI-first identity & access management platform** (Apache-2.0). Supports OAuth2, OIDC, SAML, LDAP, CAS, webauthn, and multi-tenant management out of the box. **Best for UI-driven enterprise IAM deployment.**
 
-10. **[Zitadel](https://github.com/zitadel/zitadel)** [![GitHub stars](https://img.shields.io/github/stars/zitadel/zitadel?style=social&color=white)](https://github.com/zitadel/zitadel/stargazers)  
+10. **[Zitadel](https://github.com/zitadel/zitadel)** [![GitHub_Stars](https://img.shields.io/github/stars/zitadel/zitadel?style=social&color=white)](https://github.com/zitadel/zitadel/stargazers)  
     Modern, API-first identity infrastructure with turnkey multi-tenancy, audit logging, OIDC/SAML2, Passkeys/FIDO2, and SCIM 2.0 (Apache-2.0). **Best for multi-tenant B2B SaaS.**
 
-11. **[LLDAP](https://github.com/lldap/lldap)** [![GitHub stars](https://img.shields.io/github/stars/lldap/lldap?style=social&color=white)](https://github.com/lldap/lldap/stargazers)  
+11. **[LLDAP](https://github.com/lldap/lldap)** [![GitHub_Stars](https://img.shields.io/github/stars/lldap/lldap?style=social&color=white)](https://github.com/lldap/lldap/stargazers)  
     Lightweight, simplified LDAP server tailored for self-hosted services and user management without standard LDAP complexity (GPL-3.0). **Best for lightweight self-hosted user directories.**
 
-12. **[Pomerium](https://github.com/pomerium/pomerium)** [![GitHub stars](https://img.shields.io/github/stars/pomerium/pomerium?style=social&color=white)](https://github.com/pomerium/pomerium/stargazers)  
+12. **[Pomerium](https://github.com/pomerium/pomerium)** [![GitHub_Stars](https://img.shields.io/github/stars/pomerium/pomerium?style=social&color=white)](https://github.com/pomerium/pomerium/stargazers)  
     Identity-aware access proxy delivering BeyondCorp-style Zero Trust access with seamless SSO integration (Apache-2.0). **Best for securing internal services without VPNs.**
 
-13. **[Kanidm](https://github.com/kanidm/kanidm)** [![GitHub stars](https://img.shields.io/github/stars/kanidm/kanidm?style=social&color=white)](https://github.com/kanidm/kanidm/stargazers)  
+13. **[Kanidm](https://github.com/kanidm/kanidm)** [![GitHub_Stars](https://img.shields.io/github/stars/kanidm/kanidm?style=social&color=white)](https://github.com/kanidm/kanidm/stargazers)  
     Modern identity management platform written in Rust (MPL-2.0). Fast, memory-safe identity provider supporting RADIUS, OAuth2, and WebAuthn. **Best for Rust ecosystems and secure infrastructure.**
 
-14. **[WSO2 Identity Server](https://github.com/wso2/product-is)** [![GitHub stars](https://img.shields.io/github/stars/wso2/product-is?style=social&color=white)](https://github.com/wso2/product-is/stargazers)  
+14. **[WSO2 Identity Server](https://github.com/wso2/product-is)** [![GitHub_Stars](https://img.shields.io/github/stars/wso2/product-is?style=social&color=white)](https://github.com/wso2/product-is/stargazers)  
     Enterprise-grade open-source IAM platform (Apache-2.0). Features adaptive authentication, identity federation, privacy compliance, and identity governance. **Best for large enterprise deployments.**
 
-15. **[Apache Syncope](https://github.com/apache/syncope)** [![GitHub stars](https://img.shields.io/github/stars/apache/syncope?style=social&color=white)](https://github.com/apache/syncope/stargazers)  
+15. **[Apache Syncope](https://github.com/apache/syncope)** [![GitHub_Stars](https://img.shields.io/github/stars/apache/syncope?style=social&color=white)](https://github.com/apache/syncope/stargazers)  
     Open-source Identity Governance and Administration (IGA) solution (Apache-2.0). Manages user provisioning, de-provisioning, role assignment, and compliance reporting. **Best for identity governance and audit compliance.**
 
 ---
